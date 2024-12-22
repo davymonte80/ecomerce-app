@@ -71,6 +71,35 @@ Welcome to the Ecommerce App! This project is a full-stack ecommerce application
 1. Open your browser and navigate to `http://localhost:3000` to access the frontend.
 2. Use the application to browse products, add them to your cart, and proceed to checkout.
 
+### Backend
+
+1. Navigate to the backend directory:
+    ```bash
+    cd ../backend
+    ```
+
+2. Install dependencies:
+    ```bash
+    composer install
+    ```
+
+3. Set up environment variables:
+    Copy the `.env.example` file to `.env` and update the necessary environment variables:
+    ```bash
+    cp .env.example .env
+    php artisan key:generate
+    ```
+
+4. Run database migrations:
+    ```bash
+    php artisan migrate
+    ```
+
+5. Start the backend server:
+    ```bash
+    php artisan serve
+    ```
+
 ## Contributing
 
 We welcome contributions! Please fork the repository and create a pull request with your changes.
