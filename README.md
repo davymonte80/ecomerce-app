@@ -1,70 +1,80 @@
-E-Commerce Platform
-A modern, full-stack e-commerce platform built with Next.js, Laravel, and Docker. This application provides a complete shopping experience with cart management, order processing, and user authentication.
-🚀 Features
+# Ecommerce App
 
-Product Management
+Welcome to the Ecommerce App! This project is a full-stack ecommerce application with a separate frontend and backend.
 
-Browse product catalog
-Search and filter products
-Product categories and tags
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+    - [Frontend](#frontend)
+    - [Backend](#backend)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
+## Features
+- User authentication and authorization
+- Product listing and search
+- Shopping cart and checkout
+- Order management
 
-Shopping Experience
+## Installation
 
-Real-time cart updates using Redis
-Secure checkout process
-Order history and tracking
+### Frontend
 
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/davymonte80/ecomerce-app.git
+    cd ecommerce-app/frontend
+    ```
 
-User Management
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-User authentication and authorization
-Profile management
-Order history
+3. Start the development server:
+    ```bash
+    npm start
+    ```
 
+### Backend
 
-Technical Features
+1. Navigate to the backend directory:
+    ```bash
+    cd ../backend
+    ```
 
-Redis-based cart system
-RESTful API
-Docker containerization
-CI/CD with GitHub Actions
-Automated testing
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
 
+3. Set up environment variables:
+    Create a `.env` file in the backend directory and add the following:
+    ```env
+    DATABASE_URL=your_database_url
+    JWT_SECRET=your_jwt_secret
+    ```
 
+4. Run database migrations:
+    ```bash
+    npx sequelize-cli db:migrate
+    ```
 
-🛠️ Tech Stack
-Frontend
+5. Start the backend server:
+    ```bash
+    npm start
+    ```
 
-Next.js
-Tailwind CSS
-shadcn/ui
-TypeScript
+## Usage
 
-Backend
+1. Open your browser and navigate to `http://localhost:3000` to access the frontend.
+2. Use the application to browse products, add them to your cart, and proceed to checkout.
 
-Laravel
-MySQL
-Redis
-PHP 8.2
+## Contributing
 
-DevOps
+We welcome contributions! Please fork the repository and create a pull request with your changes.
 
-Docker
-GitHub Actions
-DigitalOcean
+## License
 
-📋 Prerequisites
-
-Docker and Docker Compose
-Node.js 18+
-PHP 8.2+
-Composer
-MySQL 8.0+
-Redis
-
-🚀 Getting Started
-
-Clone the repository:
-
-bash
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
